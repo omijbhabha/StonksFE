@@ -20,9 +20,9 @@ function App() {
         setResponseMessage('');
         setAverageDeviation(null);
         setPlotUrl(null);
-
+    
         try {
-            const response = await axios.post('http://127.0.0.1:5000/stonks', {
+            const response = await axios.post('https://stonksbe.onrender.com/stonks', {
                 option: selectedOption
             });
             setResponseMessage(response.data.message);
