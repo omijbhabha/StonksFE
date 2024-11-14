@@ -22,7 +22,7 @@ function App() {
         setPlotUrl(null);
     
         try {
-            const response = await axios.post('https://stonksbe.onrender.com/stonks', {
+            const response = await axios.post('https://6896-103-169-236-163.ngrok-free.app/stonks', {
                 option: selectedOption
             });
             setResponseMessage(response.data.message);
